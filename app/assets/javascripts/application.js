@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree
-//= require_jquery.jcarousel.pack
-//= require_jquery-func . 
+//= require jquery.jcarousel.pack
+//= require jquery-func
+
