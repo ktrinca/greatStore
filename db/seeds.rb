@@ -6,6 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Category.create(:name => 'Camperas')
+Category.create(:name => 'Pantalones')
+Category.create(:name => 'Polleras Indu')
+Category.create(:name => 'Remeras deportivas')
+Category.create(:name => 'Remeras fiesta')
+
+Product.delete_all
 Product.create(:title => 'Blaser',
 :description =>
 %{
@@ -14,6 +21,7 @@ Blaser rojo alunares, genial para este verano porque es liviano
 :image_url => '/assets/big1.jpg',
 :cost_price => 49.50,
 :sale_price => 100.50)
+
 
 Product.create(:title => 'Campera dos',
 :description =>

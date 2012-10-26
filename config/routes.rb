@@ -1,4 +1,6 @@
 Genial::Application.routes.draw do
+  resources :categories
+
   get "store/index"
 
   resources :products
