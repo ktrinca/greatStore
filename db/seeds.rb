@@ -22,9 +22,9 @@ Blaser rojo alunares, genial para este verano porque es liviano
 :image_url => '/assets/big1.jpg',
 :cost_price => 49.50,
 :sale_price => 100.50,
-:category_id => category_id)
+:category_id => @category.id)
 
-@category= Category.find_by_name('Camperas')
+@category= Category.find_by_name('Remeras deportivas')
 
 Product.create(:title => 'Campera dos',
 :description =>
@@ -34,4 +34,4 @@ Campera de cuero divi
 :image_url => '/assets/big2.jpg',
 :cost_price => 80.50,
 :sale_price => 30.50,
-:category_id => category_id)
+:category_id => @category.id)
