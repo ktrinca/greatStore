@@ -1,32 +1,8 @@
- <!-- Main -->
-  <div id="main">
-    
-    <!-- Content -->
-    <div id="content">  
-      <!-- Content Slider Foto local-->
-      <div id="slider" class="box">
-        <div id="slider-holder">
-          <ul>
-            <li><a href="#"><img src="/assets/slide1.jpg" alt="" /></a></li>
-	    <li><a href="#"><img src="/assets/slide1.jpg" alt="" /></a></li>
-	    <li><a href="#"><img src="/assets/slide1.jpg" alt="" /></a></li>
-	    <li><a href="#"><img src="/assets/slide1.jpg" alt="" /></a></li>
-	  </ul>
-        </div>
-        <!-- End slider-holder -->
-        
-        <div id="slider-nav">
-          <a href="#" class="active">1</a>
-	  <a href="#">2</a>
-	  <a href="#">3</a>
-	  <a href="#">4</a>
-        </div>
-        <!-- End slider-nav -->
+ <div id="content">  
+      <!-- slider-nav -->
+        <%= render :partial => 'slider' %>
       
-      </div>
-      <!-- End Content Slider -->
-      
-      <!-- Products -->
+       <!-- Products -->
       <div class="products">
         <div class="cl">&nbsp;</div>
         <ul>
@@ -38,11 +14,12 @@
       </div>
       <!-- End Products -->
                         
-    </div>
-    <!-- End Content -->
-    
-    
-    <div class="cl">&nbsp;</div>
   </div>
-  <!-- End Main -->	
+  <!-- End Content -->
+    
+  <!-- Buscador y categorias -->
+  <%= render :partial => 'nav_left' %>
+    
+  <div class="cl">&nbsp;</div>
+	
   

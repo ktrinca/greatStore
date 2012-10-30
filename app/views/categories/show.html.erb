@@ -1,10 +1,25 @@
-<p id="notice"><%= notice %></p>
+<div id="content">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <b> nombre:</b>
-  <%= @category. name %>
-</p>
+  <p>
+   <b> nombre:</b>
+   <%= @category. name %>
+  </p>
 
+  <% unless @products.empty? %>
+    <div class="products">
+      <div class="cl">&nbsp;</div>
+      <ul>
+        <%= render :partial => "products/index", :collection => @products %>
+      </ul>
+      <div class="cl">&nbsp;</div>
+      </br></br>
+    </div>
+  <% end %>
+</div>
+<!-- End Content -->
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<!-- Buscador y categorias -->
+<%= render :partial => 'store/nav_left', :local => @categories %>
+    
+<div class="cl">&nbsp;</div>
