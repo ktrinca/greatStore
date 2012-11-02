@@ -1,8 +1,15 @@
- <div id="content">  
+ <!-- Main -->
+  <div id="main">
+    
+    <!-- Content -->
+    <div id="content">  
       <!-- slider-nav -->
         <%= render :partial => 'slider' %>
       
-       <!-- Products -->
+      </div>
+      <!-- End Content Slider -->
+      
+      <!-- Products -->
       <div class="products">
         <div class="cl">&nbsp;</div>
         <ul>
@@ -14,12 +21,13 @@
       </div>
       <!-- End Products -->
                         
+    </div>
+    <!-- End Content -->
+    
+    <!-- Buscador -->
+    <%= render :partial => 'nav_left' %>
+    
+    <div class="cl">&nbsp;</div>
   </div>
-  <!-- End Content -->
-    
-  <!-- Buscador y categorias -->
-  <%= render :partial => 'nav_left' %>
-    
-  <div class="cl">&nbsp;</div>
-	
+  <!-- End Main -->	
   
