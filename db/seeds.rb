@@ -35,3 +35,28 @@ Campera de cuero divi
 :cost_price => 80.50,
 :sale_price => 30.50,
 :category_id => @category.id)
+
+@category= Category.find_by_name('Camperas')
+
+Product.create(:title => 'Cuero sin parar',
+:description =>
+%{
+Campera de cuero divi
+},
+:image_url => '/assets/big2.jpg',
+:cost_price => 80.50,
+:sale_price => 30.50,
+:category_id => @category.id)
+
+@category= Category.find_by_name('Camperas')
+
+Product.create(:title => 'Cueross enterate',
+:description =>
+%{
+Campera de cuero divi
+},
+:image_url => '/assets/big2.jpg',
+:cost_price => 80.50,
+:sale_price => 30.50,
+:category_id => @category.id)
+

@@ -13,6 +13,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @search = Product.search(params[:q])
     @category = Category.find(params[:id])
     @products = @category.products
     @categories = Category.all

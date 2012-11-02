@@ -4,7 +4,23 @@
   <div class="box search">
     <h2>Search by <span></span></h2>
     <div class="box-content">
-            FORM SEARCH         
+      <%= search_form_for @search do |f| %>
+          <%= f.label :title_cont, "Producto" %>
+          <div class="field">
+             
+             <%= f.text_field :title_cont %>
+          </div>
+          
+          <%= f.label :"Categoria" %>
+          <div class="field" >
+              
+              <%= collection_select(:q, :category_id_eq, @categories, :id, :name)%>
+          </div>
+          
+          <input type="submit" class="search-submit" value="Search" />
+      <% end %>
+
+
     </div>
     <!-- End box-content -->
          
