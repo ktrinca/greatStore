@@ -1,7 +1,7 @@
 <% @products.each do |product| %>
       <li>
-        <%=link_to( image_tag(product.image_url), product) %>
-        <div class="product-info">
+        <%=link_to( image_tag(product.picture), product) %>
+	 <div class="product-info">
           <h3>Genial</h3>
           <div class="product-desc">
 	    <h4><%= product.title %></h4>
@@ -15,4 +15,5 @@
         <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
           
       </li>
+      
 <% end %>

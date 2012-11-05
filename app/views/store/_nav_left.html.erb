@@ -14,7 +14,7 @@
           <%= f.label :"Categoria" %>
           <div class="field" >
               
-              <%= collection_select(:q, :category_id_eq, @categories, :id, :name)%>
+              <%= collection_select(:q, :category_id_eq, @categories, :id, :name, {:include_blank => '- Seleccione Categoria -'})%>
           </div>
           
           <input type="submit" class="search-submit" value="Search" />

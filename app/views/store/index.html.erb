@@ -14,10 +14,12 @@
         <div class="cl">&nbsp;</div>
         <ul>
           <%= render :partial => 'products/index' %>
+          
         </ul>
+        
         <div class="cl">&nbsp;</div>
         </br></br>
-      
+        <%= will_paginate @products %>
       </div>
       <!-- End Products -->
                         
