@@ -9,10 +9,11 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree
+ *= require_products
  *= require_style
  *= require_ie6
  */
 
 @import "style";
 @import "ie6";
+@import "products";
