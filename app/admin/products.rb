@@ -8,7 +8,6 @@ ActiveAdmin.register Product do
     column "Foto" do |product| 
       link_to image_tag(product.picture, :alt => "product image", :height=>"64px", :width=>"64px"), admin_product_path(product)
     end
-    
     column "Precio de costo", :cost_price
     column "Precio de venta", :sale_price
     column "Categoria", :category
