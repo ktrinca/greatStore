@@ -1,14 +1,32 @@
-<!-- Content -->
-<div id="content">  
-    <div class="products">
-      <div class="cl">&nbsp;</div>
-      <ul>
-        <%= render :partial => 'index' %>
-      </ul>
-      <div class="cl">&nbsp;</div>
-      </br></br>
-        <%= link_to 'New product', new_product_path %>
+ <!-- Main -->
+  <div id="main">
+    
+    <!-- Content -->
+    <div id="content">  
+      
+      <!-- End Content Slider -->
+      
+      <!-- Products -->
+      <div class="products">
+        <div class="cl">&nbsp;</div>
+        <ul>
+          <%= render :partial => 'index' %>
+          
+        </ul>
+        
+        <div class="cl">&nbsp;</div>
+        </br></br>
+        
+      </div>
+      <!-- End Products -->
+                        
     </div>
-</div>
-<!-- Buscador y categorias -->
-<%= render :partial => 'store/nav_left' %>
+    <!-- End Content -->
+    
+    <!-- Buscador -->
+    <%= render :partial => 'store/nav_left' %>
+    
+    <div class="cl">&nbsp;</div>
+  </div>
+  <!-- End Main -->	
+  
